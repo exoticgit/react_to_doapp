@@ -10,6 +10,7 @@ const TaskCard = (props) => {
     const deleteTaskHandler = (event) => {
         if(window.confirm('Are You Sure!'))
         {
+            console.log('deleted');
             let elem = event.target.parentElement.getAttribute('dataindex');
             props.updateCards(elem); 
         }
